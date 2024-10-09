@@ -25,3 +25,12 @@ function outerFunction() {
 
 // Call the outer function
 outerFunction();
+
+// Trying to access block scoped variable outside of its block will cause an error
+// console.log(blockVar); // Uncommenting this will result in: ReferenceError: blockVar is not defined
+
+// Accessing global variable
+console.log(globalVar); // Accessible: Output: I am a global variable
+
+// Accessing outer variable outside its function will cause an error
+// console.log(outerVar); // Uncommenting this will result in: ReferenceError: outerVar is not defined
